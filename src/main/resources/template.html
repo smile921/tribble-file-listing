@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>index</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+  <!-- <script src="main.js"></script> -->
+  <style>
+    body{
+      margin: 0;
+      border: 0;
+      background: #ffffee;
+    }
+    .dir  {
+      margin-left: 1em;
+    }
+    .parent a {
+      margin-left: 2em;
+    }
+    ul li {
+      list-style: none;
+    }
+    a {
+      font-size: 24px;
+      display: block;
+      text-decoration: none;
+    }
+    footer{
+      text-align: center;
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <h2> resource server ... as FTP </h2>
+  <hr>
+  <div class="dir">
+    {directory}
+  </div>
+  <div class="parent">
+    {parent}
+  </div>
+  <div class="files-blk">
+    {files}
+  </div>
+  <hr>
+  <footer>
+    <span class="copy-info">©Smlile921 版权所有 2018-09-21 备案号：ICP备 xxxx</span>
+    <span class="support"> supported by vert.x </span>
+    <script src="/static/jquery.min.js"></script>
+    <script src="/static/qrcode.min.js"></script>
+    <script type="text/javascript">
+      var qrcode = new QRCode(document.getElementById("qrcode"), {
+        text: "http://jindo.dev.naver.com/collie",
+        width: 256,
+        height: 256,
+        colorDark : "#000000",
+        colorLight : "#ffffff",
+        correctLevel : QRCode.CorrectLevel.H
+      });
+    </script> 
+  </footer>
+</body>
+</html>

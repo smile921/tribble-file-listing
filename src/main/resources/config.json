@@ -1,0 +1,12 @@
+{
+	"config":
+		{
+			"name":"resource-server",
+			"port": 8888,
+			"template":"template.html",
+			"index":"index.html",
+			"root":"C:\\Dev\\",
+			"mavenRepo":"D:\\maven\\repo\\",
+			"gradleRepo":"C:\\Users\\Frere921\\.gradle\\caches\\modules-2\\files-2.1\\"
+		}
+}
